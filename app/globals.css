@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-spin-custom {
+  animation: spin 1s linear infinite;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+
+/* Utility classes */
+.card {
+  @apply bg-secondary rounded-lg p-5 shadow-card border border-border;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium transition-colors duration-300 cursor-pointer;
+}
+
+.btn-primary {
+  @apply btn bg-accent text-white hover:bg-accent-hover;
+}
+
+.btn-secondary {
+  @apply btn bg-secondary text-text-primary hover:bg-border;
+}
+
+.btn-danger {
+  @apply btn bg-danger text-white hover:opacity-80;
+}
+
+.input-field {
+  @apply w-full px-4 py-3 bg-secondary border border-border rounded-lg text-text-primary placeholder-text-secondary focus:outline-none focus:border-accent transition-colors;
+}
+
+.input-field:focus {
+  border-color: #ff6b35;
+}
+
+.container-center {
+  @apply flex items-center justify-center min-h-screen;
+}
