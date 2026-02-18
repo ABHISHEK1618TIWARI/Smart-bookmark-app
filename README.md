@@ -238,6 +238,12 @@ Open [http://localhost:3000](http://localhost:3000) in browser.
 - ✅ Optimized database queries with indexes
 - ✅ Image optimization for favicons
 - ✅ CSS minification with Tailwind
+
+## Submission
+
+- **Live Vercel URL:** (add after deployment)
+- **GitHub repository (public):** (add URL after pushing)
+- **Notes:** Include a short "Problems & solutions" section describing any issues you encountered and how you solved them.
 - ✅ Code splitting with Next.js
 - ✅ Lazy loading of components
 
